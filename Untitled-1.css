@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+}
+
+canvas {
+    display: block;
+    border: 1px solid black;
+    background-color: #000;
+}
+#scoreCount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+}
+/* 虚拟按键控制器样式 */
+.controls {
+    position: fixed;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.control-button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    background-color: #444;
+    color: white;
+    border: none;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.control-button:active {
+    background-color: #888;
+}
+#score {
+    color: white; /* 字体颜色为白色 */
+    font-size: 30px; /* 字体大小 */
+    position: absolute; /* 绝对定位 */
+    top: 10px; /* 距离顶部 10 像素 */
+    left: 10px; /* 距离左侧 10 像素 */
+    z-index: 10; /* 确保在其他元素之上显示 */
+}
