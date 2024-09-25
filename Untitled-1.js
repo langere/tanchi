@@ -149,18 +149,18 @@ function handleGesture() {
 
     if (Math.abs(deltaX) > Math.abs(deltaY)) { // 水平方向滑动
         if (deltaX > 0 && velX === 0) { // 向右滑动
-            velX = snakeSize; 
+            velX = speedIncrement; 
             velY = 0; 
         } else if (deltaX < 0 && velX === 0) { // 向左滑动
-            velX = -snakeSize; 
+            velX = -speedIncrement; 
             velY = 0; 
         }
     } else { // 垂直方向滑动
         if (deltaY > 0 && velY === 0) { // 向下滑动
-            velY = snakeSize; 
+            velY = speedIncrement; 
             velX = 0; 
         } else if (deltaY < 0 && velY === 0) { // 向上滑动
-            velY = -snakeSize; 
+            velY = -speedIncrement; 
             velX = 0; 
         }
     }
