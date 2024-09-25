@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+}
+
+canvas {
+    background-color: black;
+    display: block;
+}
+
+#scoreCount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+}
+#score {
+    color: white; /* 字体颜色为白色 */
+    font-size: 30px; /* 字体大小 */
+    position: absolute; /* 绝对定位 */
+    top: 10px; /* 距离顶部 10 像素 */
+    left: 10px; /* 距离左侧 10 像素 */
+    z-index: 10; /* 确保在其他元素之上显示 */
+}
