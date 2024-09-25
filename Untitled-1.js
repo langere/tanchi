@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (head.x < food.x + snakeSize && head.x + snakeSize > food.x &&
             head.y < food.y + snakeSize && head.y + snakeSize > food.y) {
             score++; // 增加分数
-            speedIncrement=speedIncrement+score*0.02; // 增加速度
+            speedIncrement=speedIncrement+score*0.01; // 增加速度
             if(speedIncrement>5){peedIncrement=5;}
             updateScoreDisplay(); // 更新分数显示
             food = generateFood(); // 随机生成新食物
@@ -93,7 +93,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function resetGame() {
         score = 0;
         snake = [{ x: 50, y: 50 }];
-        velX = snakeSize;
+        speedIncrement=2;
+        velX = speedIncrement;
         velY = 0;
         food = generateFood();
         updateScoreDisplay(); // 更新分数显示
